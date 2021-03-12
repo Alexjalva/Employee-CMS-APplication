@@ -10,10 +10,10 @@ function init() {
   const logoText = logo({ name: "Employee Manager" }).render();
 
   console.log(logoText);
-
+  //Main prompt function that controls functionality and user entry
   loadMainPrompts();
 }
-
+// Loads main prompts via inquirer and controls user access to database functions
 async function loadMainPrompts() {
   const { choice } = await prompt([
     {
